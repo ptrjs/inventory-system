@@ -1,5 +1,5 @@
 const httpStatus = require('http-status');
-const prisma = require('../../prisma/index');
+const prisma = require('../../prisma/client');
 const ApiError = require('../utils/ApiError');
 
 /**

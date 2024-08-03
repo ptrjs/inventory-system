@@ -1,7 +1,7 @@
 const { Strategy: JwtStrategy, ExtractJwt } = require('passport-jwt');
 const config = require('./config');
 const { tokenTypes } = require('./tokens');
-const prisma = require('../../prisma/index');
+const prisma = require('../../prisma/client');
 
 const jwtOptions = {
   secretOrKey: config.jwt.secret,
